@@ -40,4 +40,8 @@ int main() {
 	for (int i = 0; i < M; i++) 
 		cout << c[i] << ' ';
 	
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> bde0e66ef56c6579fcc40063c79b5105901d9770
