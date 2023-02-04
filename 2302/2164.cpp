@@ -1,20 +1,22 @@
 #include <iostream>
 using namespace std;
-
-int queue[5000001];
+int queue[1000000];
 
 int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
-    int N, front, back, temp;
+    int N, front=1, back, temp;
     cin >> N;
-    int *queue = new int[N+1];
 
-    for(int i=0;i<N;i++){
-        queue[i]=i+1;
+    for(int i=1;i<=N;i++){
+        queue[i]=i;
     }
     back = N;
-    while (back-front!=1){
+    if(N==1) {
+        cout << "1";
+        return 0;
+    }
+    while(back-front!=1){
         front++;
         temp=queue[front];
         front++;
